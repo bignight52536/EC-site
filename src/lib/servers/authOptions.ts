@@ -8,6 +8,10 @@ import env from "../../env";
 const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
+
+
+
+    
     GitHubProvider({
       clientId: env.GITHUB_CLIENT_ID,
       clientSecret: env.GITHUB_CLIENT_SECRET,
